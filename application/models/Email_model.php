@@ -24,9 +24,9 @@ class Email_model extends CI_Model
     function password_reset_email($account_type = '', $id = '', $pass = '')
     {   
         $omgee_image_url        = '<img src="'.base_url().'uploads/logo_image/omgee_logo.png">';
-        $fb_image_url        = '<a href="'.'https://www.facebook.com"><img src="'.base_url().'uploads/logo_image/facebook_logo.png"></a>';
-        $insta_image_url        = '<a href="'.'https://www.instagram.com"><img src="'.base_url().'uploads/logo_image/instagram_logo.png"></a>';
-        $linkdin_image_url        = '<a href="'.'https://www.linkedin.com"><img src="'.base_url().'uploads/logo_image/linkdin_logo.png"></a>';
+        $fb_image_url        = '<a href="'.'https://www.facebook.com/omgeeau"><img src="'.base_url().'uploads/logo_image/facebook_logo.png"></a>';
+        $insta_image_url        = '<a href="'.'https://www.instagram.com/omgeeau/"><img src="'.base_url().'uploads/logo_image/instagram_logo.png"></a>';
+        $linkdin_image_url        = '<a href="'.'https://www.linkedin.com/company/omgeeau/"><img src="'.base_url().'uploads/logo_image/linkdin_logo.png"></a>';
         
         //$this->load->database();
         $from_name  = $this->db->get_where('general_settings',array('type' => 'system_name'))->row()->value;
